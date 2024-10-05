@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JS</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>
+            <h2>Ejercicio 1</h2>
+        </legend>
+        <p>Escribe un script que cambie el texto del siguiente párrafo al presionar el botón. Has referencia al elemento
+            por su nombre de etiqueta.</p>
+        <p id="parrafo1">Este párrafo debe cambiar de color</p>
+
+        <input type="button" value="Cambiar el color" onclick="funcion1()">
+        
+        <script>
+            function funcion1(){
+
+            document.getElementById("parrafo1").style.color = "purple";
+
+        }
+
+        </script>
+          
+
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h2>Ejercicio 2</h2>
+        </legend>
+        <p>Escribe un script que cambie el color del fondo del siguiente cuadro al presionar el botón</p>
+        <div class="cuadro1" id="cuadro1"></div><br>
+        
+        <input type="button" value="Cambiar el color" onclick="funcion2()">
+
+        <script>
+            function funcion2(){
+
+            document.getElementById("cuadro1").style.backgroundColor = "purple";
+
+        }
+
+        </script>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h2>Ejercicio 3</h2>
+        </legend>
+        <p>Escribe un script que cambie el color de fondo del siguiente cuadro y modifique su tamaño. Has referencia al elemento por su clase.</p>
+        <div class="cuadro2"></div><br>
+
+        <input type="button" value="Cambiar el cuadro" onclick="funcion3()">
+
+        <script>
+            function funcion3(){
+
+            document.getElementsByClassName("cuadro2")[0].style.backgroundColor = "lightblue";
+            document.getElementsByClassName("cuadro2")[0].style.width = "400px";
+
+        }
+
+        </script>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h2>Ejercicio 4</h2>
+        </legend>
+        <p>Escribe un script que al presionar el botón convierta el siguiente cuadro en un circulo y que al volver a
+            presionarlo lo regrese a su forma original</p>
+        <div class="cuadro3" id="cuadro3"></div><br>
+        
+        <input type="button" value="Convertir en circulo" onclick="funcion4()">
+
+        <script>
+            function funcion4(){
+                let cuadro = document.getElementById("cuadro3");
+            if (cuadro.style.borderRadius === "50%") {
+                cuadro.style.borderRadius = "0"; 
+            } else {
+                cuadro.style.borderRadius = "50%"; 
+            }
+       
+
+        }
+
+        </script>
+
+    </fieldset>
+
+</body>
+
+</html>

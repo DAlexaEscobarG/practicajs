@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.cuadro1{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    transition: 1s;
+}
+.cuadro2{
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    transition: 1s;
+}
+.cuadro3{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    transition: 1s;
+}
